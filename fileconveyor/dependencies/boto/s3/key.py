@@ -24,7 +24,7 @@ import os
 import rfc822
 import StringIO
 import base64
-import fileconveyor.dependencies.boto.utils as fileconveyor.dependencies.boto.utils
+import fileconveyor.dependencies.boto.utils
 from fileconveyor.dependencies.boto.exception import S3ResponseError, S3DataError, BotoClientError
 from fileconveyor.dependencies.boto.s3.user import User
 from fileconveyor.dependencies.boto import UserAgent, config

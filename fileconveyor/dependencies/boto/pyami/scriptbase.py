@@ -2,7 +2,7 @@ import os, sys, time, traceback
 import smtplib
 from fileconveyor.dependencies.boto.utils import ShellCommand, get_ts
 import fileconveyor.dependencies.boto as boto
-import fileconveyor.dependencies.boto.utils as fileconveyor.dependencies.boto.utils
+import fileconveyor.dependencies.boto.utils
 
 class ScriptBase:
 

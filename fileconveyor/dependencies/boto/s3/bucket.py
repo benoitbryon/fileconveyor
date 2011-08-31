@@ -28,7 +28,7 @@ from fileconveyor.dependencies.boto.s3.key import Key
 from fileconveyor.dependencies.boto.s3.prefix import Prefix
 from fileconveyor.dependencies.boto.exception import S3ResponseError, S3PermissionsError, S3CopyError
 from fileconveyor.dependencies.boto.s3.bucketlistresultset import BucketListResultSet
-import fileconveyor.dependencies.boto.utils as fileconveyor.dependencies.boto.utils
+import fileconveyor.dependencies.boto.utils
 import xml.sax
 import urllib
 

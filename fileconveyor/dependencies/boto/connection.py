@@ -49,7 +49,7 @@ import xml.sax
 import fileconveyor.dependencies.boto as boto
 from fileconveyor.dependencies.boto.exception import AWSConnectionError, BotoClientError, BotoServerError
 from fileconveyor.dependencies.boto.resultset import ResultSet
-import fileconveyor.dependencies.boto.utils as fileconveyor.dependencies.boto.utils
+import fileconveyor.dependencies.boto.utils
 from fileconveyor.dependencies.boto import config, UserAgent, handler
 try:
     from hashlib import sha1 as sha

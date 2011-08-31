@@ -23,7 +23,7 @@ import urllib
 import xml.sax
 import uuid
 import fileconveyor.dependencies.boto as boto
-import fileconveyor.dependencies.boto.utils as fileconveyor.dependencies.boto.utils
+import fileconveyor.dependencies.boto.utils
 import urllib
 from fileconveyor.dependencies.boto import handler
 from fileconveyor.dependencies.boto.connection import AWSQueryConnection

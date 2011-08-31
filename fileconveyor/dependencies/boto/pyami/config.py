@@ -21,7 +21,6 @@
 #
 import StringIO, os
 import ConfigParser
-import fileconveyor.dependencies.boto as boto
 
 BotoConfigLocations = ['/etc/boto.cfg', os.path.expanduser('~/.boto')]
 BotoConfigPath = BotoConfigLocations[0]
@@ -144,6 +143,8 @@ class Config(ConfigParser.SafeConfigParser):
     
     def dump_to_sdb(self, domain_name, item_name):
         import simplejson
+        import fileconveyor.dependencies.boto as boto
+
         sdb = boto.connect_sdb()
         domain = sdb.lookup(domain_name)
         if not domain:
@@ -159,6 +160,8 @@ class Config(ConfigParser.SafeConfigParser):
 
     def load_from_sdb(self, domain_name, item_name):
         import simplejson
+        import fileconveyor.dependencies.boto as boto
+
         sdb = boto.connect_sdb()
         domain = sdb.lookup(domain_name)
         item = domain.get_item(item_name)

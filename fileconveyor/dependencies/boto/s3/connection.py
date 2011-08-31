@@ -22,7 +22,7 @@
 import xml.sax
 import urllib, base64
 import time
-import fileconveyor.dependencies.boto.utils as fileconveyor.dependencies.boto.utils
+import fileconveyor.dependencies.boto.utils
 import types
 from fileconveyor.dependencies.boto.connection import AWSAuthConnection
 from fileconveyor.dependencies.boto import handler
