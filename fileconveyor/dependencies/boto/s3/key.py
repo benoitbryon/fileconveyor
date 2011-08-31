@@ -24,7 +24,7 @@ import os
 import rfc822
 import StringIO
 import base64
-import boto.utils
+import fileconveyor.dependencies.boto.utils as fileconveyor.dependencies.boto.utils
 from fileconveyor.dependencies.boto.exception import S3ResponseError, S3DataError, BotoClientError
 from fileconveyor.dependencies.boto.s3.user import User
 from fileconveyor.dependencies.boto import UserAgent, config
@@ -95,7 +95,7 @@ class Key:
             if self.resp.status < 199 or self.resp.status > 299:
                 raise S3ResponseError(self.resp.status, self.resp.reason)
             response_headers = self.resp.msg
-            self.metadata = boto.utils.get_aws_metadata(response_headers)
+            self.metadata = fileconveyor.dependencies.boto.utils.get_aws_metadata(response_headers)
             for name,value in response_headers.items():
                 if name.lower() == 'content-length':
                     self.size = int(value)
@@ -362,7 +362,7 @@ class Key:
             headers['Content-Type'] = self.content_type
         headers['Content-Length'] = self.size
         headers['Expect'] = '100-Continue'
-        headers = boto.utils.merge_meta(headers, self.metadata)
+        headers = fileconveyor.dependencies.boto.utils.merge_meta(headers, self.metadata)
         return self.bucket.connection.make_request('PUT', self.bucket.name,
                 self.name, headers, sender=sender)
 

@@ -19,13 +19,13 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 #
-import boto.pyami.installers
+import fileconveyor.dependencies.boto.pyami.installers
 import os
 import os.path
 import boto
 from pwd import getpwnam
 
-class Installer(boto.pyami.installers.Installer):
+class Installer(fileconveyor.dependencies.boto.pyami.installers.Installer):
     """
     Base Installer class for Ubuntu-based AMI's
     """

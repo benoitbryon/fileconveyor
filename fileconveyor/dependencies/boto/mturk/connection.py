@@ -24,7 +24,7 @@ import datetime
 
 from fileconveyor.dependencies.boto import handler
 from fileconveyor.dependencies.boto.mturk.price import Price
-import boto.mturk.notification
+import fileconveyor.dependencies.boto.mturk.notification
 from fileconveyor.dependencies.boto.connection import AWSQueryConnection
 from fileconveyor.dependencies.boto.exception import EC2ResponseError
 from fileconveyor.dependencies.boto.resultset import ResultSet
@@ -96,7 +96,7 @@ class MTurkConnection(AWSQueryConnection):
         # notification specifications in the "inactive" status.
         notification_params = {'Destination': destination,
                                'Transport': transport,
-                               'Version': boto.mturk.notification.NotificationMessage.NOTIFICATION_VERSION,
+                               'Version': fileconveyor.dependencies.boto.mturk.notification.NotificationMessage.NOTIFICATION_VERSION,
                                'Active': True,
                                }
 

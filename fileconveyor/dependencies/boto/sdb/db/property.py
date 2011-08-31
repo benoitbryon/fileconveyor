@@ -26,7 +26,7 @@ from fileconveyor.dependencies.boto.sdb.db.query import Query
 
 import re
 import boto
-import boto.s3.key
+import fileconveyor.dependencies.boto.s3.key
 
 class Property(object):
 
@@ -168,7 +168,7 @@ class PasswordProperty(StringProperty):
 
 class S3KeyProperty(Property):
     
-    data_type = boto.s3.key.Key
+    data_type = fileconveyor.dependencies.boto.s3.key.Key
 
     def __init__(self, verbose_name=None, name=None, default=None,
                  required=False, validator=None, choices=None, unique=False):

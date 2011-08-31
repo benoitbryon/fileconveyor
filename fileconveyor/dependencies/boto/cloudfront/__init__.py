@@ -23,7 +23,6 @@
 import xml.sax
 import base64
 import time
-import boto.utils
 from fileconveyor.dependencies.boto.connection import AWSAuthConnection
 from fileconveyor.dependencies.boto import handler
 from fileconveyor.dependencies.boto.cloudfront.distribution import Distribution, DistributionConfig, DistributionSummary

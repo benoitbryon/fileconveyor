@@ -49,7 +49,7 @@ import xml.sax
 import boto
 from fileconveyor.dependencies.boto.exception import AWSConnectionError, BotoClientError, BotoServerError
 from fileconveyor.dependencies.boto.resultset import ResultSet
-import boto.utils
+import fileconveyor.dependencies.boto.utils as fileconveyor.dependencies.boto.utils
 from fileconveyor.dependencies.boto import config, UserAgent, handler
 try:
     from hashlib import sha1 as sha
@@ -152,7 +152,7 @@ class AWSAuthConnection:
             self.hmac_256 = None
 
         # cache up to 20 connections
-        self._cache = boto.utils.LRUCache(20)
+        self._cache = fileconveyor.dependencies.boto.utils.LRUCache(20)
         self.refresh_http_connection(self.server, self.is_secure)
         self._last_rs = None
 
@@ -328,7 +328,7 @@ class AWSAuthConnection:
             headers['Date'] = time.strftime("%a, %d %b %Y %H:%M:%S GMT",
                                             time.gmtime())
 
-        c_string = boto.utils.canonical_string(method, path, headers)
+        c_string = fileconveyor.dependencies.boto.utils.canonical_string(method, path, headers)
         boto.log.debug('Canonical: %s' % c_string)
         hmac = self.hmac.copy()
         hmac.update(c_string)

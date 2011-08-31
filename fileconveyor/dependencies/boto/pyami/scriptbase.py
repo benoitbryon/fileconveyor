@@ -2,7 +2,7 @@ import os, sys, time, traceback
 import smtplib
 from fileconveyor.dependencies.boto.utils import ShellCommand, get_ts
 import boto
-import boto.utils
+import fileconveyor.dependencies.boto.utils as fileconveyor.dependencies.boto.utils
 
 class ScriptBase:
 
@@ -14,7 +14,7 @@ class ScriptBase:
             boto.config.read(config_file)
 
     def notify(self, subject, body=''):
-        boto.utils.notify(subject, body)
+        fileconveyor.dependencies.boto.utils.notify(subject, body)
 
     def mkdir(self, path):
         if not os.path.isdir(path):

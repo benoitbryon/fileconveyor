@@ -22,7 +22,7 @@
 import xml.sax
 import urllib, base64
 import time
-import boto.utils
+import fileconveyor.dependencies.boto.utils as fileconveyor.dependencies.boto.utils
 import types
 from fileconveyor.dependencies.boto.connection import AWSAuthConnection
 from fileconveyor.dependencies.boto import handler
@@ -117,7 +117,7 @@ class S3Connection(AWSAuthConnection):
         # Convert conditions object mappings to condition statements
 
         return '{"expiration": "%s",\n"conditions": [%s]}' % \
-            (time.strftime(boto.utils.ISO8601, expiration_time), ",".join(conditions))
+            (time.strftime(fileconveyor.dependencies.boto.utils.ISO8601, expiration_time), ",".join(conditions))
 
 
     def build_post_form_args(self, bucket_name, key, expires_in = 6000,
@@ -187,7 +187,7 @@ class S3Connection(AWSAuthConnection):
             headers = {}
         expires = int(time.time() + expires_in)
         auth_path = self.calling_format.build_auth_path(bucket, key)
-        canonical_str = boto.utils.canonical_string(method, auth_path,
+        canonical_str = fileconveyor.dependencies.boto.utils.canonical_string(method, auth_path,
                                                     headers, expires)
         hmac_copy = self.hmac.copy()
         hmac_copy.update(canonical_str)

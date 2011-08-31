@@ -28,7 +28,7 @@ from fileconveyor.dependencies.boto.s3.key import Key
 from fileconveyor.dependencies.boto.s3.prefix import Prefix
 from fileconveyor.dependencies.boto.exception import S3ResponseError, S3PermissionsError, S3CopyError
 from fileconveyor.dependencies.boto.s3.bucketlistresultset import BucketListResultSet
-import boto.utils
+import fileconveyor.dependencies.boto.utils as fileconveyor.dependencies.boto.utils
 import xml.sax
 import urllib
 
@@ -117,7 +117,7 @@ class Bucket:
         if response.status == 200:
             body = response.read()
             k = self.key_class(self)
-            k.metadata = boto.utils.get_aws_metadata(response.msg)
+            k.metadata = fileconveyor.dependencies.boto.utils.get_aws_metadata(response.msg)
             k.etag = response.getheader('etag')
             k.content_type = response.getheader('content-type')
             k.content_encoding = response.getheader('content-encoding')
@@ -262,7 +262,7 @@ class Bucket:
         if metadata:
             headers = {'x-amz-copy-source' : '%s/%s' % (src_bucket_name, src_key_name),
                        'x-amz-metadata-directive' : 'REPLACE'}
-            headers = boto.utils.merge_meta(headers, metadata)
+            headers = fileconveyor.dependencies.boto.utils.merge_meta(headers, metadata)
         else:
             headers = {'x-amz-copy-source' : '%s/%s' % (src_bucket_name, src_key_name),
                        'x-amz-metadata-directive' : 'COPY'}

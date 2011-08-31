@@ -23,7 +23,7 @@ import urllib
 import xml.sax
 import uuid
 import boto
-import boto.utils
+import fileconveyor.dependencies.boto.utils as fileconveyor.dependencies.boto.utils
 import urllib
 from fileconveyor.dependencies.boto import handler
 from fileconveyor.dependencies.boto.connection import AWSQueryConnection
@@ -124,7 +124,7 @@ class FPSConnection(AWSQueryConnection):
 			url += "&%s=%s" % (k, urllib.quote_plus(str(params[k])))
 
 		url = "/cobranded-ui/actions/start?%s" % ( url[1:])
-		signature= boto.utils.encode(self.aws_secret_access_key, url, True)
+		signature= fileconveyor.dependencies.boto.utils.encode(self.aws_secret_access_key, url, True)
 		return "https://authorize.payments-sandbox.amazon.com%s&awsSignature=%s" % (url, signature)
 
 	def make_payment(self, amount, sender_token, charge_fee_to="Recipient", reference=None, senderReference=None, recipientReference=None, senderDescription=None, recipientDescription=None, callerDescription=None, metadata=None, transactionDate=None):

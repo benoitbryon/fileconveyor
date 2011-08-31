@@ -24,7 +24,7 @@ High-level abstraction of an EC2 order for servers
 """
 
 import boto
-import boto.ec2
+import fileconveyor.dependencies.boto.ec2
 from fileconveyor.dependencies.boto.mashups.server import Server, ServerSet
 from fileconveyor.dependencies.boto.mashups.iobject import IObject
 from fileconveyor.dependencies.boto.pyami.config import Config
@@ -57,7 +57,7 @@ class Item(IObject):
         if region:
             self.region = region
         else:
-            l = [(r, r.name, r.url) for r in boto.ec2.regions()]
+            l = [(r, r.name, r.url) for r in fileconveyor.dependencies.boto.ec2.regions()]
             self.region = self.choose_from_list(l, prompt='Choose Region')
 
     def set_name(self, name=None):
