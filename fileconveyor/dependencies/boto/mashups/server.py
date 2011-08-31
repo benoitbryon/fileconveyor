@@ -23,11 +23,11 @@
 High-level abstraction of an EC2 server
 """
 import boto, boto.utils
-from boto.mashups.iobject import IObject
-from boto.pyami.config import Config, BotoConfigPath
-from boto.mashups.interactive import interactive_shell
-from boto.sdb.db.model import Model
-from boto.sdb.db.property import *
+from fileconveyor.dependencies.boto.mashups.iobject import IObject
+from fileconveyor.dependencies.boto.pyami.config import Config, BotoConfigPath
+from fileconveyor.dependencies.boto.mashups.interactive import interactive_shell
+from fileconveyor.dependencies.boto.sdb.db.model import Model
+from fileconveyor.dependencies.boto.sdb.db.property import *
 import os
 import StringIO
 

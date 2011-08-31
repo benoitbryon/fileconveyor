@@ -1,4 +1,4 @@
->>> from boto.mturk.connection import MTurkConnection
+>>> from fileconveyor.dependencies.boto.mturk.connection import MTurkConnection
 >>> conn = MTurkConnection(host='mechanicalturk.sandbox.amazonaws.com')
 
 # should have some reviewable HIT's returned, especially if returning all HIT type's

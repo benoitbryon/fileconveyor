@@ -20,8 +20,8 @@
 # IN THE SOFTWARE.
 
 import boto
-from boto.sqs.message import MHMessage
-from boto.utils import get_ts
+from fileconveyor.dependencies.boto.sqs.message import MHMessage
+from fileconveyor.dependencies.boto.utils import get_ts
 from socket import gethostname
 import os, mimetypes, time
 

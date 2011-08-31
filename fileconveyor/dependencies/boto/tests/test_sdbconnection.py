@@ -27,8 +27,8 @@ Some unit tests for the SDBConnection
 
 import unittest
 import time
-from boto.sdb.connection import SDBConnection
-from boto.exception import SDBResponseError
+from fileconveyor.dependencies.boto.sdb.connection import SDBConnection
+from fileconveyor.dependencies.boto.exception import SDBResponseError
 
 class SDBConnectionTest (unittest.TestCase):
 

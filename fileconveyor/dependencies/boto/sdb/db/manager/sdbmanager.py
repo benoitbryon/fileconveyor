@@ -19,12 +19,12 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 import boto
-from boto.utils import find_class
+from fileconveyor.dependencies.boto.utils import find_class
 import uuid
-from boto.sdb.db.key import Key
-from boto.sdb.db.model import Model
+from fileconveyor.dependencies.boto.sdb.db.key import Key
+from fileconveyor.dependencies.boto.sdb.db.model import Model
 from datetime import datetime
-from boto.exception import SDBPersistenceError
+from fileconveyor.dependencies.boto.exception import SDBPersistenceError
 
 ISO8601 = '%Y-%m-%dT%H:%M:%SZ'
 

@@ -54,7 +54,7 @@ class RegionInfo(object):
         @rtype: L{EC2Connection<boto.ec2.connection.EC2Connection}
         @return: The connection to this regions endpoint
         """
-        from boto.ec2.connection import EC2Connection
+        from fileconveyor.dependencies.boto.ec2.connection import EC2Connection
         return EC2Connection(region=self, **kw_params)
 
 

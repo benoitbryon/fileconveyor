@@ -25,10 +25,10 @@ High-level abstraction of an EC2 order for servers
 
 import boto
 import boto.ec2
-from boto.mashups.server import Server, ServerSet
-from boto.mashups.iobject import IObject
-from boto.pyami.config import Config
-from boto.sdb.persist import get_domain, set_domain
+from fileconveyor.dependencies.boto.mashups.server import Server, ServerSet
+from fileconveyor.dependencies.boto.mashups.iobject import IObject
+from fileconveyor.dependencies.boto.pyami.config import Config
+from fileconveyor.dependencies.boto.sdb.persist import get_domain, set_domain
 import time, StringIO
 
 InstanceTypes = ['m1.small', 'm1.large', 'm1.xlarge', 'c1.medium', 'c1.xlarge']

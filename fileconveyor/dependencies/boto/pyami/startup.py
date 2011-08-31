@@ -21,10 +21,10 @@
 #
 import os, sys, traceback, StringIO
 import boto
-from boto.utils import find_class
-from boto import config
-from boto.pyami.scriptbase import ScriptBase
-from boto.utils import find_class
+from fileconveyor.dependencies.boto.utils import find_class
+from fileconveyor.dependencies.boto import config
+from fileconveyor.dependencies.boto.pyami.scriptbase import ScriptBase
+from fileconveyor.dependencies.boto.utils import find_class
 
 class Startup(ScriptBase):
 

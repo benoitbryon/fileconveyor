@@ -22,8 +22,8 @@
 """
 Represents an SDB Domain
 """
-from boto.sdb.queryresultset import QueryResultSet
-from boto.sdb.item import Item
+from fileconveyor.dependencies.boto.sdb.queryresultset import QueryResultSet
+from fileconveyor.dependencies.boto.sdb.item import Item
 
 class Domain:
     

@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-from boto.sqs.message import MHMessage
+from fileconveyor.dependencies.boto.sqs.message import MHMessage
 import base64
 import simplejson
 

@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-from boto.s3.user import User
+from fileconveyor.dependencies.boto.s3.user import User
 import StringIO
 
 CannedACLStrings = ['private', 'public-read',

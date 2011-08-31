@@ -25,10 +25,10 @@ Represents an SQS Queue
 
 import xml.sax
 import urlparse
-from boto.exception import SQSError
-from boto.handler import XmlHandler
-from boto.sqs.message import Message
-from boto.resultset import ResultSet
+from fileconveyor.dependencies.boto.exception import SQSError
+from fileconveyor.dependencies.boto.handler import XmlHandler
+from fileconveyor.dependencies.boto.sqs.message import Message
+from fileconveyor.dependencies.boto.resultset import ResultSet
 
 class Queue:
     

@@ -19,14 +19,14 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-from boto.connection import AWSAuthConnection, AWSQueryConnection
+from fileconveyor.dependencies.boto.connection import AWSAuthConnection, AWSQueryConnection
 import xml.sax
-from boto.sqs.queue import Queue
-from boto.sqs.message import Message
-from boto.sqs.attributes import Attributes
-from boto import handler
-from boto.resultset import ResultSet
-from boto.exception import SQSError
+from fileconveyor.dependencies.boto.sqs.queue import Queue
+from fileconveyor.dependencies.boto.sqs.message import Message
+from fileconveyor.dependencies.boto.sqs.attributes import Attributes
+from fileconveyor.dependencies.boto import handler
+from fileconveyor.dependencies.boto.resultset import ResultSet
+from fileconveyor.dependencies.boto.exception import SQSError
 
 PERM_ReceiveMessage = 'ReceiveMessage'
 PERM_SendMessage = 'SendMessage'

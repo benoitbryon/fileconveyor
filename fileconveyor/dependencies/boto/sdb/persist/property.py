@@ -19,9 +19,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-from boto.exception import SDBPersistenceError
-from boto.sdb.persist.checker import *
-from boto.utils import Password
+from fileconveyor.dependencies.boto.exception import SDBPersistenceError
+from fileconveyor.dependencies.boto.sdb.persist.checker import *
+from fileconveyor.dependencies.boto.utils import Password
 
 class Property(object):
 

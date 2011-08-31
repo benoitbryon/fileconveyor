@@ -23,12 +23,12 @@ import urllib
 import xml.sax
 import threading
 import boto
-from boto import handler
-from boto.connection import AWSQueryConnection
-from boto.sdb.domain import Domain, DomainMetaData
-from boto.sdb.item import Item
-from boto.exception import SDBResponseError
-from boto.resultset import ResultSet
+from fileconveyor.dependencies.boto import handler
+from fileconveyor.dependencies.boto.connection import AWSQueryConnection
+from fileconveyor.dependencies.boto.sdb.domain import Domain, DomainMetaData
+from fileconveyor.dependencies.boto.sdb.item import Item
+from fileconveyor.dependencies.boto.exception import SDBResponseError
+from fileconveyor.dependencies.boto.resultset import ResultSet
 
 class ItemThread(threading.Thread):
     

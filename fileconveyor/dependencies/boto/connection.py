@@ -47,10 +47,10 @@ import urllib, urlparse
 import os
 import xml.sax
 import boto
-from boto.exception import AWSConnectionError, BotoClientError, BotoServerError
-from boto.resultset import ResultSet
+from fileconveyor.dependencies.boto.exception import AWSConnectionError, BotoClientError, BotoServerError
+from fileconveyor.dependencies.boto.resultset import ResultSet
 import boto.utils
-from boto import config, UserAgent, handler
+from fileconveyor.dependencies.boto import config, UserAgent, handler
 try:
     from hashlib import sha1 as sha
     from hashlib import sha256 as sha256

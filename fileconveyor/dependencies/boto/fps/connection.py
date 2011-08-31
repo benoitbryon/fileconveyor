@@ -25,10 +25,10 @@ import uuid
 import boto
 import boto.utils
 import urllib
-from boto import handler
-from boto.connection import AWSQueryConnection
-from boto.resultset import ResultSet
-from boto.exception import FPSResponseError
+from fileconveyor.dependencies.boto import handler
+from fileconveyor.dependencies.boto.connection import AWSQueryConnection
+from fileconveyor.dependencies.boto.resultset import ResultSet
+from fileconveyor.dependencies.boto.exception import FPSResponseError
 
 class FPSConnection(AWSQueryConnection):
 

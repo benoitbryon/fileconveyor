@@ -17,8 +17,8 @@ AWS_BUCKET_PREFIX = getattr(settings, AWS_BUCKET_NAME, {})
 AWS_HEADERS       = getattr(settings, AWS_HEADERS, {})
 
 try:
-    from boto.s3.connection import S3Connection
-    from boto.s3.key import Key
+    from fileconveyor.dependencies.boto.s3.connection import S3Connection
+    from fileconveyor.dependencies.boto.s3.key import Key
 except ImportError:
     raise ImproperlyConfigured, "Could not load Boto's S3 bindings."
 

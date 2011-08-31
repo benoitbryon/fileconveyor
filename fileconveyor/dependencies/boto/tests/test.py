@@ -28,10 +28,10 @@ import sys, os, unittest
 import getopt, sys
 import boto
 
-from boto.tests.test_sqsconnection import SQSConnectionTest
-from boto.tests.test_s3connection import S3ConnectionTest
-from boto.tests.test_ec2connection import EC2ConnectionTest
-from boto.tests.test_sdbconnection import SDBConnectionTest
+from fileconveyor.dependencies.boto.tests.test_sqsconnection import SQSConnectionTest
+from fileconveyor.dependencies.boto.tests.test_s3connection import S3ConnectionTest
+from fileconveyor.dependencies.boto.tests.test_ec2connection import EC2ConnectionTest
+from fileconveyor.dependencies.boto.tests.test_sdbconnection import SDBConnectionTest
 
 def usage():
     print 'test.py  [-t testsuite] [-v verbosity]'

@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 #
-from boto.pyami.installers.ubuntu.installer import Installer
+from fileconveyor.dependencies.boto.pyami.installers.ubuntu.installer import Installer
 import os
 import boto
 from ConfigParser import SafeConfigParser

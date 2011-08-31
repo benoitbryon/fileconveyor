@@ -22,7 +22,7 @@
 """
 Represents an EC2 Elastic IP Snapshot
 """
-from boto.ec2.ec2object import EC2Object
+from fileconveyor.dependencies.boto.ec2.ec2object import EC2Object
 
 class Snapshot(EC2Object):
     

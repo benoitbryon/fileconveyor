@@ -1,9 +1,9 @@
-from boto.sdb.db.model import Model
-from boto.sdb.db.property import *
-from boto.sdb.db.manager import get_manager
+from fileconveyor.dependencies.boto.sdb.db.model import Model
+from fileconveyor.dependencies.boto.sdb.db.property import *
+from fileconveyor.dependencies.boto.sdb.db.manager import get_manager
 from datetime import datetime
 import time
-from boto.exception import SDBPersistenceError
+from fileconveyor.dependencies.boto.exception import SDBPersistenceError
 
 _objects = {}
 

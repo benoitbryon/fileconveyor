@@ -22,7 +22,7 @@
 #
 import getopt, sys, imp, time
 import boto
-from boto.utils import get_instance_userdata
+from fileconveyor.dependencies.boto.utils import get_instance_userdata
 
 usage_string = """
 SYNOPSIS

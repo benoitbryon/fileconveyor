@@ -23,8 +23,8 @@
 Exception classes - Subclassing allows you to check for specific errors
 """
 
-from boto import handler
-from boto.resultset import ResultSet
+from fileconveyor.dependencies.boto import handler
+from fileconveyor.dependencies.boto.resultset import ResultSet
 
 import xml.sax
 

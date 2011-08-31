@@ -27,9 +27,9 @@ Some unit tests for the SQSConnection
 
 import unittest
 import time
-from boto.sqs.connection import SQSConnection
-from boto.sqs.message import MHMessage
-from boto.exception import SQSError
+from fileconveyor.dependencies.boto.sqs.connection import SQSConnection
+from fileconveyor.dependencies.boto.sqs.message import MHMessage
+from fileconveyor.dependencies.boto.exception import SQSError
 
 class SQSConnectionTest (unittest.TestCase):
 

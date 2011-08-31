@@ -20,7 +20,7 @@
 # IN THE SOFTWARE.
 #
 import boto
-from boto.pyami.scriptbase import ScriptBase
+from fileconveyor.dependencies.boto.pyami.scriptbase import ScriptBase
 import os, StringIO
 
 class CopyBot(ScriptBase):

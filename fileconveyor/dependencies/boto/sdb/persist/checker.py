@@ -21,11 +21,11 @@
 
 from datetime import datetime
 import boto
-from boto.s3.key import Key
-from boto.s3.bucket import Bucket
-from boto.sdb.persist import revive_object_from_id
-from boto.exception import SDBPersistenceError
-from boto.utils import Password
+from fileconveyor.dependencies.boto.s3.key import Key
+from fileconveyor.dependencies.boto.s3.bucket import Bucket
+from fileconveyor.dependencies.boto.sdb.persist import revive_object_from_id
+from fileconveyor.dependencies.boto.exception import SDBPersistenceError
+from fileconveyor.dependencies.boto.utils import Password
 
 ISO8601 = '%Y-%m-%dT%H:%M:%SZ'
 

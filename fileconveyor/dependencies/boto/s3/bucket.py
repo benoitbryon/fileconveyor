@@ -20,14 +20,14 @@
 # IN THE SOFTWARE.
 
 import boto
-from boto import handler
-from boto.resultset import ResultSet
-from boto.s3.acl import Policy, CannedACLStrings, ACL, Grant
-from boto.s3.user import User
-from boto.s3.key import Key
-from boto.s3.prefix import Prefix
-from boto.exception import S3ResponseError, S3PermissionsError, S3CopyError
-from boto.s3.bucketlistresultset import BucketListResultSet
+from fileconveyor.dependencies.boto import handler
+from fileconveyor.dependencies.boto.resultset import ResultSet
+from fileconveyor.dependencies.boto.s3.acl import Policy, CannedACLStrings, ACL, Grant
+from fileconveyor.dependencies.boto.s3.user import User
+from fileconveyor.dependencies.boto.s3.key import Key
+from fileconveyor.dependencies.boto.s3.prefix import Prefix
+from fileconveyor.dependencies.boto.exception import S3ResponseError, S3PermissionsError, S3CopyError
+from fileconveyor.dependencies.boto.s3.bucketlistresultset import BucketListResultSet
 import boto.utils
 import xml.sax
 import urllib

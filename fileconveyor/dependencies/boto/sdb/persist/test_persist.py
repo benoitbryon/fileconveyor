@@ -1,6 +1,6 @@
-from boto.sdb.persist.object import SDBObject
-from boto.sdb.persist.property import *
-from boto.sdb.persist import Manager
+from fileconveyor.dependencies.boto.sdb.persist.object import SDBObject
+from fileconveyor.dependencies.boto.sdb.persist.property import *
+from fileconveyor.dependencies.boto.sdb.persist import Manager
 from datetime import datetime
 import time
 

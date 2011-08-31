@@ -21,9 +21,9 @@
 #
 import os, pwd
 import boto
-from boto.utils import get_instance_metadata, get_instance_userdata
-from boto.pyami.config import Config, BotoConfigPath
-from boto.pyami.scriptbase import ScriptBase
+from fileconveyor.dependencies.boto.utils import get_instance_metadata, get_instance_userdata
+from fileconveyor.dependencies.boto.pyami.config import Config, BotoConfigPath
+from fileconveyor.dependencies.boto.pyami.scriptbase import ScriptBase
 
 class Bootstrap(ScriptBase):
     """

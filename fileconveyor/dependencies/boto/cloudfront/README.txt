@@ -13,7 +13,7 @@ The following shows the main features of the cloudfront module from an interacti
 
 Create an cloudfront connection:
 
->>> from boto.cloudfront import CloudFrontConnection
+>>> from fileconveyor.dependencies.boto.cloudfront import CloudFrontConnection
 >>> c = CloudFrontConnection()
 
 Create a new Distribution:

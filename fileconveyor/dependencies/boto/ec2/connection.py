@@ -27,19 +27,19 @@ import urllib
 import xml.sax
 import base64
 import boto
-from boto import config
-from boto.connection import AWSQueryConnection
-from boto.resultset import ResultSet
-from boto.ec2.image import Image, ImageAttribute
-from boto.ec2.instance import Reservation, Instance, ConsoleOutput
-from boto.ec2.keypair import KeyPair
-from boto.ec2.address import Address
-from boto.ec2.volume import Volume
-from boto.ec2.snapshot import Snapshot
-from boto.ec2.zone import Zone
-from boto.ec2.securitygroup import SecurityGroup
-from boto.ec2.regioninfo import RegionInfo
-from boto.exception import EC2ResponseError
+from fileconveyor.dependencies.boto import config
+from fileconveyor.dependencies.boto.connection import AWSQueryConnection
+from fileconveyor.dependencies.boto.resultset import ResultSet
+from fileconveyor.dependencies.boto.ec2.image import Image, ImageAttribute
+from fileconveyor.dependencies.boto.ec2.instance import Reservation, Instance, ConsoleOutput
+from fileconveyor.dependencies.boto.ec2.keypair import KeyPair
+from fileconveyor.dependencies.boto.ec2.address import Address
+from fileconveyor.dependencies.boto.ec2.volume import Volume
+from fileconveyor.dependencies.boto.ec2.snapshot import Snapshot
+from fileconveyor.dependencies.boto.ec2.zone import Zone
+from fileconveyor.dependencies.boto.ec2.securitygroup import SecurityGroup
+from fileconveyor.dependencies.boto.ec2.regioninfo import RegionInfo
+from fileconveyor.dependencies.boto.exception import EC2ResponseError
 
 class EC2Connection(AWSQueryConnection):
 

@@ -22,8 +22,8 @@
 
 import getopt, sys, os, time, mimetypes
 from datetime import datetime, timedelta
-from boto.services.servicedef import ServiceDef
-from boto.utils import parse_ts
+from fileconveyor.dependencies.boto.services.servicedef import ServiceDef
+from fileconveyor.dependencies.boto.utils import parse_ts
 import boto
 
 class ResultProcessor:

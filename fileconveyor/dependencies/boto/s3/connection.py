@@ -24,12 +24,12 @@ import urllib, base64
 import time
 import boto.utils
 import types
-from boto.connection import AWSAuthConnection
-from boto import handler
-from boto.s3.bucket import Bucket
-from boto.s3.key import Key
-from boto.resultset import ResultSet
-from boto.exception import S3ResponseError, S3CreateError, BotoClientError
+from fileconveyor.dependencies.boto.connection import AWSAuthConnection
+from fileconveyor.dependencies.boto import handler
+from fileconveyor.dependencies.boto.s3.bucket import Bucket
+from fileconveyor.dependencies.boto.s3.key import Key
+from fileconveyor.dependencies.boto.resultset import ResultSet
+from fileconveyor.dependencies.boto.exception import S3ResponseError, S3CreateError, BotoClientError
 
 def assert_case_insensitive(f):
     def wrapper(*args, **kwargs):

@@ -20,8 +20,8 @@
 # IN THE SOFTWARE.
 
 import boto
-from boto.services.service import Service
-from boto.services.message import ServiceMessage
+from fileconveyor.dependencies.boto.services.service import Service
+from fileconveyor.dependencies.boto.services.message import ServiceMessage
 import os, time, mimetypes
 
 class SonOfMMM(Service):

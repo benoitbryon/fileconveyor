@@ -26,7 +26,7 @@ class TransporterCF(TransporterS3):
 
 def create_distribution(access_key_id, secret_access_key, origin, comment="", cnames=None):
     import time
-    from boto.cloudfront import CloudFrontConnection
+    from fileconveyor.dependencies.boto.cloudfront import CloudFrontConnection
 
     """utility function to create a new distribution"""
     c = CloudFrontConnection(

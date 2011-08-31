@@ -1,4 +1,4 @@
-from boto.mturk.connection import MTurkConnection
+from fileconveyor.dependencies.boto.mturk.connection import MTurkConnection
 
 def cleanup():
     """Remove any boto test related HIT's"""

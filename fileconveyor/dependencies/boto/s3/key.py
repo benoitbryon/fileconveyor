@@ -25,9 +25,9 @@ import rfc822
 import StringIO
 import base64
 import boto.utils
-from boto.exception import S3ResponseError, S3DataError, BotoClientError
-from boto.s3.user import User
-from boto import UserAgent, config
+from fileconveyor.dependencies.boto.exception import S3ResponseError, S3DataError, BotoClientError
+from fileconveyor.dependencies.boto.s3.user import User
+from fileconveyor.dependencies.boto import UserAgent, config
 try:
     from hashlib import md5
 except ImportError:

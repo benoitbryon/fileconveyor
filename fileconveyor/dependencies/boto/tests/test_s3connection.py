@@ -28,8 +28,8 @@ Some unit tests for the S3Connection
 import unittest
 import time
 import os
-from boto.s3.connection import S3Connection
-from boto.exception import S3PermissionsError
+from fileconveyor.dependencies.boto.s3.connection import S3Connection
+from fileconveyor.dependencies.boto.exception import S3PermissionsError
 
 class S3ConnectionTest (unittest.TestCase):
 

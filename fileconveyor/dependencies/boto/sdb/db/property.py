@@ -21,8 +21,8 @@
 
 import datetime
 from key import Key
-from boto.utils import Password
-from boto.sdb.db.query import Query
+from fileconveyor.dependencies.boto.utils import Password
+from fileconveyor.dependencies.boto.sdb.db.query import Query
 
 import re
 import boto

@@ -23,7 +23,7 @@
 This module provides an interface to the Elastic Compute Cloud (EC2)
 service from AWS.
 """
-from boto.ec2.connection import EC2Connection
+from fileconveyor.dependencies.boto.ec2.connection import EC2Connection
 
 def regions(**kw_params):
     """

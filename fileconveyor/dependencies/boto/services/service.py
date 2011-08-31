@@ -20,11 +20,11 @@
 # IN THE SOFTWARE.
 
 import boto
-from boto.services.message import ServiceMessage
-from boto.services.servicedef import ServiceDef
-from boto.pyami.scriptbase import ScriptBase
-from boto.exception import S3ResponseError
-from boto.utils import get_ts
+from fileconveyor.dependencies.boto.services.message import ServiceMessage
+from fileconveyor.dependencies.boto.services.servicedef import ServiceDef
+from fileconveyor.dependencies.boto.pyami.scriptbase import ScriptBase
+from fileconveyor.dependencies.boto.exception import S3ResponseError
+from fileconveyor.dependencies.boto.utils import get_ts
 import StringIO
 import time
 import os

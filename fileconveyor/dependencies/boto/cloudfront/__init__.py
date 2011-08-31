@@ -24,11 +24,11 @@ import xml.sax
 import base64
 import time
 import boto.utils
-from boto.connection import AWSAuthConnection
-from boto import handler
-from boto.cloudfront.distribution import Distribution, DistributionConfig, DistributionSummary
-from boto.resultset import ResultSet
-from boto.cloudfront.exception import CloudFrontServerError
+from fileconveyor.dependencies.boto.connection import AWSAuthConnection
+from fileconveyor.dependencies.boto import handler
+from fileconveyor.dependencies.boto.cloudfront.distribution import Distribution, DistributionConfig, DistributionSummary
+from fileconveyor.dependencies.boto.resultset import ResultSet
+from fileconveyor.dependencies.boto.cloudfront.exception import CloudFrontServerError
 
 class CloudFrontConnection(AWSAuthConnection):
 

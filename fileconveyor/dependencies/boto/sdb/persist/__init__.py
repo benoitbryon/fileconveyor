@@ -20,7 +20,7 @@
 # IN THE SOFTWARE.
 
 import boto
-from boto.utils import find_class
+from fileconveyor.dependencies.boto.utils import find_class
 
 class Manager(object):
 

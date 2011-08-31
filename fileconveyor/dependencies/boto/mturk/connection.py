@@ -22,12 +22,12 @@
 import xml.sax
 import datetime
 
-from boto import handler
-from boto.mturk.price import Price
+from fileconveyor.dependencies.boto import handler
+from fileconveyor.dependencies.boto.mturk.price import Price
 import boto.mturk.notification
-from boto.connection import AWSQueryConnection
-from boto.exception import EC2ResponseError
-from boto.resultset import ResultSet
+from fileconveyor.dependencies.boto.connection import AWSQueryConnection
+from fileconveyor.dependencies.boto.exception import EC2ResponseError
+from fileconveyor.dependencies.boto.resultset import ResultSet
 
 class MTurkConnection(AWSQueryConnection):
     
