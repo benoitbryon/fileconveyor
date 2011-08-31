@@ -1,5 +1,5 @@
 from transporter import *
-from storages.FTPStorage import *
+from fileconveyor.dependencies.storages.FTPStorage import *
 
 
 TRANSPORTER_CLASS = "TransporterFTP"

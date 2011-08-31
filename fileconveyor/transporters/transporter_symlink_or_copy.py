@@ -1,5 +1,5 @@
 from transporter import *
-from storages.SymlinkOrCopyStorage import *
+from fileconveyor.dependencies.storages.SymlinkOrCopyStorage import *
 
 
 TRANSPORTER_CLASS = "TransporterSymlinkOrCopy"

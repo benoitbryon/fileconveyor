@@ -1,5 +1,5 @@
 from transporter import *
-from storages.S3BotoStorage import *
+from fileconveyor.dependencies.storages.S3BotoStorage import *
 
 
 TRANSPORTER_CLASS = "TransporterS3"

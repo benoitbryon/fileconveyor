@@ -1,5 +1,5 @@
 from transporter import *
-from storages.mosso import *
+from fileconveyor.dependencies.storages.mosso import *
 
 
 TRANSPORTER_CLASS = "TransporterMosso"

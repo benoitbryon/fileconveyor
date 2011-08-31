@@ -1,5 +1,5 @@
 from transporter import *
-from storages.SFTPStorage import *
+from fileconveyor.dependencies.storages.SFTPStorage import *
 
 
 TRANSPORTER_CLASS = "TransporterSFTP"
