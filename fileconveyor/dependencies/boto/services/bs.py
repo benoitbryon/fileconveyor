@@ -24,7 +24,7 @@ from fileconveyor.dependencies.boto.services.servicedef import ServiceDef
 from fileconveyor.dependencies.boto.services.message import ServiceMessage
 from fileconveyor.dependencies.boto.services.submit import Submitter
 from fileconveyor.dependencies.boto.services.result import ResultProcessor
-import boto
+import fileconveyor.dependencies.boto as boto
 import sys, os, StringIO
 
 class BS(object):

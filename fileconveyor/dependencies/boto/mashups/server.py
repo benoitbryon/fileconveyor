@@ -22,7 +22,8 @@
 """
 High-level abstraction of an EC2 server
 """
-import boto, boto.utils
+import fileconveyor.dependencies.boto as boto
+import fileconveyor.dependencies.boto.utils
 from fileconveyor.dependencies.boto.mashups.iobject import IObject
 from fileconveyor.dependencies.boto.pyami.config import Config, BotoConfigPath
 from fileconveyor.dependencies.boto.mashups.interactive import interactive_shell

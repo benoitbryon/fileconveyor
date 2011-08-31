@@ -20,7 +20,7 @@
 # IN THE SOFTWARE.
 #
 
-import boto
+import fileconveyor.dependencies.boto as boto
 
 boto.check_extensions(__name__, __path__)
 

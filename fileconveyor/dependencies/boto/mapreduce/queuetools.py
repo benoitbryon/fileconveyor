@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import socket, sys
 from lqs import LQSServer, LQSMessage
-import boto
+import fileconveyor.dependencies.boto as boto
 from fileconveyor.dependencies.boto.sqs.jsonmessage import JSONMessage
 
 class LQSClient:

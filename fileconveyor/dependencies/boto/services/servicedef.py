@@ -21,7 +21,7 @@
 
 from fileconveyor.dependencies.boto.pyami.config import Config
 from fileconveyor.dependencies.boto.services.message import ServiceMessage
-import boto
+import fileconveyor.dependencies.boto as boto
 
 class ServiceDef(Config):
 

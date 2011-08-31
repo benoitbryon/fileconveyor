@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-import boto
+import fileconveyor.dependencies.boto as boto
 from fileconveyor.dependencies.boto import handler
 from fileconveyor.dependencies.boto.resultset import ResultSet
 from fileconveyor.dependencies.boto.s3.acl import Policy, CannedACLStrings, ACL, Grant

@@ -26,7 +26,7 @@ Represents a connection to the EC2 service.
 import urllib
 import xml.sax
 import base64
-import boto
+import fileconveyor.dependencies.boto as boto
 from fileconveyor.dependencies.boto import config
 from fileconveyor.dependencies.boto.connection import AWSQueryConnection
 from fileconveyor.dependencies.boto.resultset import ResultSet

@@ -20,7 +20,7 @@
 # IN THE SOFTWARE.
 #
 from fileconveyor.dependencies.boto.pyami.installers.ubuntu.installer import Installer
-import boto
+import fileconveyor.dependencies.boto as boto
 import os
 
 class Trac(Installer):

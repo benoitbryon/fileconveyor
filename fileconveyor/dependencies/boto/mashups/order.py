@@ -23,7 +23,7 @@
 High-level abstraction of an EC2 order for servers
 """
 
-import boto
+import fileconveyor.dependencies.boto as boto
 import fileconveyor.dependencies.boto.ec2
 from fileconveyor.dependencies.boto.mashups.server import Server, ServerSet
 from fileconveyor.dependencies.boto.mashups.iobject import IObject

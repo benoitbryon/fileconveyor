@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-import boto
+import fileconveyor.dependencies.boto as boto
 from fileconveyor.dependencies.boto.services.message import ServiceMessage
 from fileconveyor.dependencies.boto.services.servicedef import ServiceDef
 from fileconveyor.dependencies.boto.pyami.scriptbase import ScriptBase

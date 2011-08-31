@@ -26,7 +26,7 @@ do the unit tests!
 
 import sys, os, unittest
 import getopt, sys
-import boto
+import fileconveyor.dependencies.boto as boto
 
 from fileconveyor.dependencies.boto.tests.test_sqsconnection import SQSConnectionTest
 from fileconveyor.dependencies.boto.tests.test_s3connection import S3ConnectionTest

@@ -22,7 +22,7 @@
 import urllib
 import xml.sax
 import threading
-import boto
+import fileconveyor.dependencies.boto as boto
 from fileconveyor.dependencies.boto import handler
 from fileconveyor.dependencies.boto.connection import AWSQueryConnection
 from fileconveyor.dependencies.boto.sdb.domain import Domain, DomainMetaData

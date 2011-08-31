@@ -21,7 +21,7 @@
 #
 import StringIO, os
 import ConfigParser
-import boto
+import fileconveyor.dependencies.boto as boto
 
 BotoConfigLocations = ['/etc/boto.cfg', os.path.expanduser('~/.boto')]
 BotoConfigPath = BotoConfigLocations[0]

@@ -25,7 +25,7 @@ from fileconveyor.dependencies.boto.utils import Password
 from fileconveyor.dependencies.boto.sdb.db.query import Query
 
 import re
-import boto
+import fileconveyor.dependencies.boto as boto
 import fileconveyor.dependencies.boto.s3.key
 
 class Property(object):

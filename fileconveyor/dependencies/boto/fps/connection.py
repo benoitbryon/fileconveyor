@@ -22,7 +22,7 @@
 import urllib
 import xml.sax
 import uuid
-import boto
+import fileconveyor.dependencies.boto as boto
 import fileconveyor.dependencies.boto.utils as fileconveyor.dependencies.boto.utils
 import urllib
 from fileconveyor.dependencies.boto import handler

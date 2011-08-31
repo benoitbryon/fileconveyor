@@ -21,7 +21,7 @@
 #
 
 import random, time, os, datetime
-import boto
+import fileconveyor.dependencies.boto as boto
 from fileconveyor.dependencies.boto.sdb.persist.object import SDBObject
 from fileconveyor.dependencies.boto.sdb.persist.property import *
 

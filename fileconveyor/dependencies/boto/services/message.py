@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-import boto
+import fileconveyor.dependencies.boto as boto
 from fileconveyor.dependencies.boto.sqs.message import MHMessage
 from fileconveyor.dependencies.boto.utils import get_ts
 from socket import gethostname

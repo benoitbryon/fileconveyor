@@ -22,7 +22,7 @@
 import fileconveyor.dependencies.boto.pyami.installers
 import os
 import os.path
-import boto
+import fileconveyor.dependencies.boto as boto
 from pwd import getpwnam
 
 class Installer(fileconveyor.dependencies.boto.pyami.installers.Installer):

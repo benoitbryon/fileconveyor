@@ -21,7 +21,7 @@
 #
 from fileconveyor.dependencies.boto.pyami.installers.ubuntu.installer import Installer
 import os
-import boto
+import fileconveyor.dependencies.boto as boto
 from ConfigParser import SafeConfigParser
 import subprocess
 import time

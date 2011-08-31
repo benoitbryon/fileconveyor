@@ -44,7 +44,7 @@ import imp
 import popen2, os, StringIO
 import time, datetime
 import logging.handlers
-import boto
+import fileconveyor.dependencies.boto as boto
 import tempfile
 import smtplib
 try:

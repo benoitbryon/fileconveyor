@@ -23,7 +23,7 @@ from fileconveyor.dependencies.boto.sdb.db.manager import get_manager
 from fileconveyor.dependencies.boto.sdb.db.property import *
 from fileconveyor.dependencies.boto.sdb.db.key import Key
 from fileconveyor.dependencies.boto.sdb.db.query import Query
-import boto
+import fileconveyor.dependencies.boto as boto
 
 class ModelMeta(type):
     "Metaclass for all Models"

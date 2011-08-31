@@ -46,7 +46,7 @@ import time
 import urllib, urlparse
 import os
 import xml.sax
-import boto
+import fileconveyor.dependencies.boto as boto
 from fileconveyor.dependencies.boto.exception import AWSConnectionError, BotoClientError, BotoServerError
 from fileconveyor.dependencies.boto.resultset import ResultSet
 import fileconveyor.dependencies.boto.utils as fileconveyor.dependencies.boto.utils

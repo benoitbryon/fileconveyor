@@ -20,7 +20,7 @@
 # IN THE SOFTWARE.
 #
 import os, sys, traceback, StringIO
-import boto
+import fileconveyor.dependencies.boto as boto
 from fileconveyor.dependencies.boto.utils import find_class
 from fileconveyor.dependencies.boto import config
 from fileconveyor.dependencies.boto.pyami.scriptbase import ScriptBase

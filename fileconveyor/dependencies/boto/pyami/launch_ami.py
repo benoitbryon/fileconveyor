@@ -21,7 +21,7 @@
 # IN THE SOFTWARE.
 #
 import getopt, sys, imp, time
-import boto
+import fileconveyor.dependencies.boto as boto
 from fileconveyor.dependencies.boto.utils import get_instance_userdata
 
 usage_string = """

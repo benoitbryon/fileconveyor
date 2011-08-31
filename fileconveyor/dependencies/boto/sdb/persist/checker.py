@@ -20,7 +20,7 @@
 # IN THE SOFTWARE.
 
 from datetime import datetime
-import boto
+import fileconveyor.dependencies.boto as boto
 from fileconveyor.dependencies.boto.s3.key import Key
 from fileconveyor.dependencies.boto.s3.bucket import Bucket
 from fileconveyor.dependencies.boto.sdb.persist import revive_object_from_id
