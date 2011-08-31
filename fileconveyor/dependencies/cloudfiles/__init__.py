@@ -59,10 +59,10 @@ Set the logs retention on CDN-enabled/public Container
 See COPYING for license information.
 """
 
-from cloudfiles.connection     import Connection, ConnectionPool
-from cloudfiles.container      import Container
-from cloudfiles.storage_object import Object
-from cloudfiles.consts         import __version__
+from fileconveyor.dependencies.cloudfiles.connection     import Connection, ConnectionPool
+from fileconveyor.dependencies.cloudfiles.container      import Container
+from fileconveyor.dependencies.cloudfiles.storage_object import Object
+from fileconveyor.dependencies.cloudfiles.consts         import __version__
 
 def get_connection(*args, **kwargs):
     """
