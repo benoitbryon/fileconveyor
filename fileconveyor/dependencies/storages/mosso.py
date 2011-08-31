@@ -14,8 +14,8 @@ from fileconveyor.dependencies.django.utils.text import get_valid_filename
 
 
 try:
-    import cloudfiles
-    from cloudfiles.errors import NoSuchObject
+    import fileconveyor.dependencies.cloudfiles as cloudfiles
+    from fileconveyor.dependencies.cloudfiles.errors import NoSuchObject
 except ImportError:
     raise ImproperlyConfigured, "Could not load cloudfiles dependency. See http://www.mosso.com/cloudfiles.jsp."
 

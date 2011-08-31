@@ -3,7 +3,7 @@ Cloud Files python client API.
 
 Working with result sets:
 
-    >>> import cloudfiles
+    >>> import fileconveyor.dependencies.cloudfiles as cloudfiles
     >>> # conn = cloudfiles.get_connection(username='jsmith', api_key='1234567890')
     >>> conn = cloudfiles.get_connection('jsmith', '1234567890')
     >>> containers = conn.get_all_containers()
