@@ -1,4 +1,4 @@
-import django
+import fileconveyor.dependencies.django
 import os.path
 import re
 
@@ -11,12 +11,12 @@ def get_svn_revision(path=None):
     format of internal SVN files.
 
     If path is provided, it should be a directory whose SVN info you want to
-    inspect. If it's not provided, this will use the root django/ package
+    inspect. If it's not provided, this will use the root fileconveyor.dependencies.django/ package
     directory.
     """
     rev = None
     if path is None:
-        path = django.__path__[0]
+        path = fileconveyor.dependencies.django.__path__[0]
     entries_path = '%s/.svn/entries' % path
 
     if os.path.exists(entries_path):

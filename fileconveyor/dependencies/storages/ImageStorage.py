@@ -1,7 +1,7 @@
 
 import os
 from PIL import ImageFile as PILImageFile
-from django.core.files.storage import FileSystemStorage
+from fileconveyor.dependencies.django.core.files.storage import FileSystemStorage
 
 
 class ImageStorage(FileSystemStorage):

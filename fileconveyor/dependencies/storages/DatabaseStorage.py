@@ -1,10 +1,10 @@
-# DatabaseStorage for django.
+# DatabaseStorage for fileconveyor.dependencies.django.
 # 2009 (c) GameKeeper Gambling Ltd, Ivanov E.
 
 
-from django.core.files.storage import Storage
-from django.core.files import File
-from django.conf import settings
+from fileconveyor.dependencies.django.core.files.storage import Storage
+from fileconveyor.dependencies.django.core.files import File
+from fileconveyor.dependencies.django.conf import settings
 
 import StringIO
 import urlparse

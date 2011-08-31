@@ -1,6 +1,6 @@
 import os
 
-from django.utils.encoding import smart_str, smart_unicode
+from fileconveyor.dependencies.django.utils.encoding import smart_str, smart_unicode
 
 try:
     from cStringIO import StringIO

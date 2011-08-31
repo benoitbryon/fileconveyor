@@ -7,8 +7,8 @@ __date__ = "$Date$"
 __license__ = "GPL"
 
 
-from django.core.files.storage import Storage
-from django.core.files import File
+from fileconveyor.dependencies.django.core.files.storage import Storage
+from fileconveyor.dependencies.django.core.files import File
 
 
 # Define exceptions.

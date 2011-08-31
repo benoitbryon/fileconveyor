@@ -1,8 +1,8 @@
 """
 Internationalization support.
 """
-from django.utils.functional import lazy
-from django.utils.encoding import force_unicode
+from fileconveyor.dependencies.django.utils.functional import lazy
+from fileconveyor.dependencies.django.utils.encoding import force_unicode
 
 __all__ = ['gettext', 'gettext_noop', 'gettext_lazy', 'ngettext',
         'ngettext_lazy', 'string_concat', 'activate', 'deactivate',
@@ -28,7 +28,7 @@ def delayed_loader(*args, **kwargs):
     once at that time.
     """
     import traceback
-    from django.conf import settings
+    from fileconveyor.dependencies.django.conf import settings
     if settings.USE_I18N:
         import trans_real as trans
     else:

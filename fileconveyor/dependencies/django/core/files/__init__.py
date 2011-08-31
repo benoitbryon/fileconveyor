@@ -1,1 +1,1 @@
-from django.core.files.base import File
+from fileconveyor.dependencies.django.core.files.base import File

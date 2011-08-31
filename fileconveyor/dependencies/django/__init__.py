@@ -10,7 +10,7 @@ def get_version():
         version = '%s %s' % (version, VERSION[3])
         if VERSION[3] != 'final':
             version = '%s %s' % (version, VERSION[4])
-    from django.utils.version import get_svn_revision
+    from fileconveyor.dependencies.django.utils.version import get_svn_revision
     svn_rev = get_svn_revision()
     if svn_rev != u'SVN-unknown':
         version = "%s %s" % (version, svn_rev)

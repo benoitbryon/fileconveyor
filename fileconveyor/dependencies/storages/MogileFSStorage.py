@@ -2,12 +2,12 @@ import urlparse
 from StringIO import StringIO
 import mimetypes
 
-from django.core.files.storage import Storage
-from django.core.exceptions import ImproperlyConfigured
-from django.conf import settings
-from django.utils.text import force_unicode
-from django.http import HttpResponse, HttpResponseNotFound
-from django.core.cache import cache
+from fileconveyor.dependencies.django.core.files.storage import Storage
+from fileconveyor.dependencies.django.core.exceptions import ImproperlyConfigured
+from fileconveyor.dependencies.django.conf import settings
+from fileconveyor.dependencies.django.utils.text import force_unicode
+from fileconveyor.dependencies.django.http import HttpResponse, HttpResponseNotFound
+from fileconveyor.dependencies.django.core.cache import cache
 
 import mogilefs
 
@@ -102,7 +102,7 @@ def serve_mogilefs_file(request, key=None):
             response = HttpResponseNotFound()
     
     else:
-        # we don't have perlbal, let's just serve the image via django
+        # we don't have perlbal, let's just serve the image via fileconveyor.dependencies.django
         file_data = client[key]
         if file_data:
             response = HttpResponse(file_data, mimetype=mimetype)

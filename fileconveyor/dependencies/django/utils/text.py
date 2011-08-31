@@ -1,8 +1,8 @@
 import re
-from django.conf import settings
-from django.utils.encoding import force_unicode
-from django.utils.functional import allow_lazy
-from django.utils.translation import ugettext_lazy
+from fileconveyor.dependencies.django.conf import settings
+from fileconveyor.dependencies.django.utils.encoding import force_unicode
+from fileconveyor.dependencies.django.utils.functional import allow_lazy
+from fileconveyor.dependencies.django.utils.translation import ugettext_lazy
 from htmlentitydefs import name2codepoint
 
 # Capitalizes the first letter of a string.

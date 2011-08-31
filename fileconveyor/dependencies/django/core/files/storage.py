@@ -2,13 +2,13 @@ import os
 import errno
 import urlparse
 
-from django.conf import settings
-from django.core.exceptions import ImproperlyConfigured, SuspiciousOperation
-from django.utils.encoding import force_unicode
-from django.utils.text import get_valid_filename
-from django.utils._os import safe_join
-from django.core.files import locks, File
-from django.core.files.move import file_move_safe
+from fileconveyor.dependencies.django.conf import settings
+from fileconveyor.dependencies.django.core.exceptions import ImproperlyConfigured, SuspiciousOperation
+from fileconveyor.dependencies.django.utils.encoding import force_unicode
+from fileconveyor.dependencies.django.utils.text import get_valid_filename
+from fileconveyor.dependencies.django.utils._os import safe_join
+from fileconveyor.dependencies.django.core.files import locks, File
+from fileconveyor.dependencies.django.core.files.move import file_move_safe
 
 __all__ = ('Storage', 'FileSystemStorage', 'DefaultStorage', 'default_storage')
 

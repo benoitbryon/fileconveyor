@@ -1,6 +1,6 @@
 import os
 from os.path import join, normcase, normpath, abspath, isabs, sep
-from django.utils.encoding import force_unicode
+from fileconveyor.dependencies.django.utils.encoding import force_unicode
 
 # Define our own abspath function that can handle joining 
 # unicode paths to a current working directory that has non-ASCII

@@ -1,7 +1,7 @@
 import types
 import urllib
 import datetime
-from django.utils.functional import Promise
+from fileconveyor.dependencies.django.utils.functional import Promise
 
 class DjangoUnicodeDecodeError(UnicodeDecodeError):
     def __init__(self, obj, *args):

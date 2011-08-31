@@ -1,7 +1,7 @@
 import os
 
-from django.conf import settings
-from django.core.files.storage import FileSystemStorage
+from fileconveyor.dependencies.django.conf import settings
+from fileconveyor.dependencies.django.core.files.storage import FileSystemStorage
 
 class OverwriteStorage(FileSystemStorage):
     

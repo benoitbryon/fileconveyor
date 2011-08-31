@@ -1,16 +1,16 @@
 """
-Custom storage for django with Mosso Cloud Files backend.
+Custom storage for fileconveyor.dependencies.django with Mosso Cloud Files backend.
 Created by Rich Leland <rich@richleland.com>.
 """
 import re
 
 from mimetypes import guess_type
 
-from django.conf import settings
-from django.core.files import File
-from django.core.files.storage import Storage
-from django.core.exceptions import ImproperlyConfigured
-from django.utils.text import get_valid_filename
+from fileconveyor.dependencies.django.conf import settings
+from fileconveyor.dependencies.django.core.files import File
+from fileconveyor.dependencies.django.core.files.storage import Storage
+from fileconveyor.dependencies.django.core.exceptions import ImproperlyConfigured
+from fileconveyor.dependencies.django.utils.text import get_valid_filename
 
 
 try:
